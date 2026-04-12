@@ -1,0 +1,546 @@
+2026-04-11 11:01:55.163 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 11:01:55.379 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 11:01:55.381 +05:30 [INF] Hosting environment: Development
+2026-04-11 11:01:55.382 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 11:05:24.435 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 11:05:24.892 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 475.0713ms
+2026-04-11 11:05:24.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 11:05:24.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui-bundle.js - null null
+2026-04-11 11:05:24.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-11 11:05:24.944 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 24.9698ms
+2026-04-11 11:05:24.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui.css - null null
+2026-04-11 11:05:24.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 11:05:25.103 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-04-11 11:05:25.105 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-04-11 11:05:25.117 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-04-11 11:05:25.133 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 213.8289ms
+2026-04-11 11:05:25.130 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 211.211ms
+2026-04-11 11:05:25.126 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui.css - 200 144929 text/css 203.7664ms
+2026-04-11 11:05:25.148 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 220.4426ms
+2026-04-11 11:05:25.266 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 11:05:25.276 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.8151ms
+2026-04-11 11:05:30.594 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - null null
+2026-04-11 11:05:30.611 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 11:05:30.704 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 11:05:30.772 +05:30 [INF] Route matched with {action = "GetMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 11:05:31.261 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetMembers (RestApi) in 478.38ms
+2026-04-11 11:05:31.266 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 11:05:31.269 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RestApi.Data.CreditDbContext' while attempting to activate 'RestApi.Controllers.WeatherForecastController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-11 11:05:31.354 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - 500 null text/plain; charset=utf-8 760.094ms
+2026-04-11 11:06:10.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - null null
+2026-04-11 11:06:10.480 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 11:06:10.483 +05:30 [INF] Route matched with {action = "GetMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 11:06:10.519 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetMembers (RestApi) in 33.6189ms
+2026-04-11 11:06:10.523 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 11:06:10.528 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RestApi.Data.CreditDbContext' while attempting to activate 'RestApi.Controllers.WeatherForecastController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-11 11:06:10.569 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - 500 null text/plain; charset=utf-8 97.0864ms
+2026-04-11 11:06:11.573 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - null null
+2026-04-11 11:06:11.584 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 11:06:11.589 +05:30 [INF] Route matched with {action = "GetMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 11:06:11.609 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetMembers (RestApi) in 13.6824ms
+2026-04-11 11:06:11.613 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 11:06:11.619 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RestApi.Data.CreditDbContext' while attempting to activate 'RestApi.Controllers.WeatherForecastController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-11 11:06:11.641 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - 500 null text/plain; charset=utf-8 68.2963ms
+2026-04-11 11:06:17.920 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/PersonsData - null null
+2026-04-11 11:06:17.934 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetAll (RestApi)'
+2026-04-11 11:06:17.954 +05:30 [INF] Route matched with {action = "GetAll", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 11:06:17.963 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetAll (RestApi) in 1.6289ms
+2026-04-11 11:06:17.967 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetAll (RestApi)'
+2026-04-11 11:06:17.970 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RestApi.Data.CreditDbContext' while attempting to activate 'RestApi.Controllers.WeatherForecastController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method53(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-11 11:06:18.001 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/PersonsData - 500 null text/plain; charset=utf-8 80.9696ms
+2026-04-11 11:52:37.765 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 11:52:37.966 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 11:52:37.967 +05:30 [INF] Hosting environment: Development
+2026-04-11 11:52:37.971 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 11:53:16.399 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 11:53:17.026 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 642.1683ms
+2026-04-11 11:53:17.049 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 11:53:17.049 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 11:53:17.082 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 35.3632ms
+2026-04-11 11:53:17.204 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 157.3927ms
+2026-04-11 11:53:17.243 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 11:53:17.260 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.0004ms
+2026-04-11 11:55:36.971 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 11:55:37.157 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 11:55:37.158 +05:30 [INF] Hosting environment: Development
+2026-04-11 11:55:37.160 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 11:56:05.777 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 11:56:06.287 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 11:56:06.287 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 11:56:06.291 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 553.6436ms
+2026-04-11 11:56:06.299 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 12.0009ms
+2026-04-11 11:56:06.368 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.927ms
+2026-04-11 11:56:06.402 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 11:56:06.420 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.9738ms
+2026-04-11 11:56:06.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/favicon-32x32.png - null null
+2026-04-11 11:56:06.470 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-04-11 11:56:06.473 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/favicon-32x32.png - 200 628 image/png 40.0233ms
+2026-04-11 11:56:13.325 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - null null
+2026-04-11 11:56:13.346 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 11:56:13.450 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 11:56:13.510 +05:30 [INF] Route matched with {action = "GetMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 11:56:38.565 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetMembers (RestApi) in 25038.4331ms
+2026-04-11 11:56:38.611 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 11:56:38.620 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The entity type 'Category' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IAsyncEnumerable<TEntity>.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RestApi.Controllers.WeatherForecastController.GetMembers() in C:\Users\sribi\source\repos\RestApi\RestApi\Controllers\WeatherForecastController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-11 11:56:39.613 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - 500 null text/plain; charset=utf-8 26288.2733ms
+2026-04-11 11:56:48.562 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetPayments - null null
+2026-04-11 11:56:48.574 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetPayments (RestApi)'
+2026-04-11 11:56:48.598 +05:30 [INF] Route matched with {action = "GetPayments", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPayments() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 12:03:53.213 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 12:03:53.403 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 12:03:53.406 +05:30 [INF] Hosting environment: Development
+2026-04-11 12:03:53.409 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 12:04:11.098 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 12:04:11.543 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 471.6727ms
+2026-04-11 12:04:11.565 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 12:04:11.565 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 12:04:11.584 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 19.6054ms
+2026-04-11 12:04:11.664 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.4165ms
+2026-04-11 12:04:11.684 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 12:04:11.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.5248ms
+2026-04-11 12:04:17.197 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - null null
+2026-04-11 12:04:17.218 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 12:04:17.316 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 12:04:17.376 +05:30 [INF] Route matched with {action = "GetMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 12:04:22.124 +05:30 [WRN] No store type was specified for the decimal property 'ChargeAmt' on entity type 'Charge'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:04:22.129 +05:30 [WRN] No store type was specified for the decimal property 'CurrBalance' on entity type 'Member'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:04:22.136 +05:30 [WRN] No store type was specified for the decimal property 'PrevBalance' on entity type 'Member'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:04:22.144 +05:30 [WRN] No store type was specified for the decimal property 'PaymentAmt' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:04:22.154 +05:30 [WRN] No store type was specified for the decimal property 'StatementAmt' on entity type 'Statement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:04:24.974 +05:30 [ERR] Failed executing DbCommand (131ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MemberNo], [m].[City], [m].[CorpNo], [m].[CorpNoNavigationCorpNo], [m].[Country], [m].[CurrBalance], [m].[ExprDt], [m].[Firstname], [m].[IssueDt], [m].[Lastname], [m].[MailCode], [m].[MemberCode], [m].[Middleinitial], [m].[PhoneNo], [m].[Photograph], [m].[PrevBalance], [m].[RegionNo], [m].[RegionNoNavigationRegionNo], [m].[StateProv], [m].[Street]
+FROM [Members] AS [m]
+2026-04-11 12:04:25.088 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'RestApi.Data.CreditDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Members'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:49966c22-cfd0-41a9-bc35-07444db4bf4b
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Members'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:49966c22-cfd0-41a9-bc35-07444db4bf4b
+Error Number:208,State:1,Class:16
+2026-04-11 12:05:11.534 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetMembers (RestApi) in 54146.799ms
+2026-04-11 12:05:11.537 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 12:05:11.541 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Members'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RestApi.Controllers.WeatherForecastController.GetMembers() in C:\Users\sribi\source\repos\RestApi\RestApi\Controllers\WeatherForecastController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:49966c22-cfd0-41a9-bc35-07444db4bf4b
+Error Number:208,State:1,Class:16
+2026-04-11 12:05:12.562 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - 500 null text/plain; charset=utf-8 55365.1318ms
+2026-04-11 12:38:15.008 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 12:38:15.260 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 12:38:15.263 +05:30 [INF] Hosting environment: Development
+2026-04-11 12:38:15.265 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 12:39:24.282 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 12:39:24.897 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 633.2004ms
+2026-04-11 12:39:24.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 12:39:24.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 12:39:24.983 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 11.3891ms
+2026-04-11 12:39:25.076 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.7851ms
+2026-04-11 12:39:25.119 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 12:39:25.134 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.6732ms
+2026-04-11 12:39:35.485 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetMembers - null null
+2026-04-11 12:39:35.518 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 12:39:35.606 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetMembers (RestApi)'
+2026-04-11 12:39:35.733 +05:30 [INF] Route matched with {action = "GetMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 12:40:06.004 +05:30 [WRN] No store type was specified for the decimal property 'ChargeAmt' on entity type 'Charge'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:40:06.009 +05:30 [WRN] No store type was specified for the decimal property 'CurrBalance' on entity type 'Member'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:40:06.012 +05:30 [WRN] No store type was specified for the decimal property 'PrevBalance' on entity type 'Member'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:40:06.016 +05:30 [WRN] No store type was specified for the decimal property 'PaymentAmt' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:40:06.018 +05:30 [WRN] No store type was specified for the decimal property 'StatementAmt' on entity type 'Statement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 12:40:08.073 +05:30 [ERR] Failed executing DbCommand (162ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MemberNo], [m].[City], [m].[CorpNo], [m].[Country], [m].[CurrBalance], [m].[ExprDt], [m].[Firstname], [m].[IssueDt], [m].[Lastname], [m].[MailCode], [m].[MemberCode], [m].[Middleinitial], [m].[PhoneNo], [m].[Photograph], [m].[PrevBalance], [m].[RegionNo], [m].[StateProv], [m].[Street]
+FROM [Members] AS [m]
+2026-04-11 12:40:08.224 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'RestApi.Data.CreditDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Members'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:34c8e41e-3aae-45b3-9b1b-f525e296f044
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Members'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:34c8e41e-3aae-45b3-9b1b-f525e296f044
+Error Number:208,State:1,Class:16
+2026-04-11 13:19:41.249 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 13:19:41.514 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 13:19:41.519 +05:30 [INF] Hosting environment: Development
+2026-04-11 13:19:41.525 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 13:20:27.682 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/PersonsData - null null
+2026-04-11 13:20:27.747 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 13:20:27.821 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetAll (RestApi)'
+2026-04-11 13:20:27.879 +05:30 [INF] Route matched with {action = "GetAll", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 13:20:33.190 +05:30 [INF] Fetching all members from Credit database
+2026-04-11 13:20:34.740 +05:30 [WRN] No store type was specified for the decimal property 'ChargeAmt' on entity type 'Charge'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 13:20:34.750 +05:30 [WRN] No store type was specified for the decimal property 'CurrBalance' on entity type 'Member'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 13:20:34.760 +05:30 [WRN] No store type was specified for the decimal property 'PrevBalance' on entity type 'Member'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 13:20:34.769 +05:30 [WRN] No store type was specified for the decimal property 'PaymentAmt' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 13:20:34.778 +05:30 [WRN] No store type was specified for the decimal property 'StatementAmt' on entity type 'Statement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-11 13:20:37.263 +05:30 [ERR] Failed executing DbCommand (108ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MemberNo], [m].[Firstname], [m].[Lastname], [m].[City], [m].[PhoneNo], GETDATE()
+FROM [Members] AS [m]
+2026-04-11 13:20:37.413 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'RestApi.Data.CreditDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Members'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a39c2758-adf4-46a1-b39c-26a9f2152a8a
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Members'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a39c2758-adf4-46a1-b39c-26a9f2152a8a
+Error Number:208,State:1,Class:16
+2026-04-11 13:20:37.614 +05:30 [ERR] Error fetching people from database
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Members'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RestApi.ServiceImplimentation.People.GetAllAsync() in C:\Users\sribi\source\repos\RestApi\RestApi\ServiceImplimentation\People.cs:line 25
+ClientConnectionId:a39c2758-adf4-46a1-b39c-26a9f2152a8a
+Error Number:208,State:1,Class:16
+2026-04-11 13:45:17.536 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 13:45:17.825 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 13:45:17.829 +05:30 [INF] Hosting environment: Development
+2026-04-11 13:45:17.832 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 13:45:40.846 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 13:45:41.476 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 653.8898ms
+2026-04-11 13:45:41.491 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 13:45:41.491 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 13:45:41.505 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 15.0612ms
+2026-04-11 13:45:41.663 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 173.451ms
+2026-04-11 13:45:41.700 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 13:45:41.727 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.5444ms
+2026-04-11 13:45:46.361 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - null null
+2026-04-11 13:45:46.383 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 13:45:46.478 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-11 13:45:46.574 +05:30 [INF] Route matched with {action = "GetBasicMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RestApi.Data.basic_member]]] GetBasicMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 13:45:46.606 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi) in 11.2878ms
+2026-04-11 13:45:46.614 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-11 13:45:46.624 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RestApi.IService.IPeople' while attempting to activate 'RestApi.Controllers.WeatherForecastController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-11 13:45:46.735 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - 500 null text/plain; charset=utf-8 374.3249ms
+2026-04-11 13:47:26.945 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 13:47:27.464 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 13:47:27.470 +05:30 [INF] Hosting environment: Development
+2026-04-11 13:47:27.473 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 13:47:32.621 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 13:47:33.091 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 486.8688ms
+2026-04-11 13:47:33.120 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 13:47:33.120 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 13:47:33.131 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 13.1255ms
+2026-04-11 13:47:33.244 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.9824ms
+2026-04-11 13:47:33.265 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 13:47:33.292 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.1812ms
+2026-04-11 13:47:37.140 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - null null
+2026-04-11 13:47:37.174 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 13:47:37.285 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-11 13:47:37.406 +05:30 [INF] Route matched with {action = "GetBasicMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RestApi.Data.basic_member]]] GetBasicMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 13:47:37.455 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi) in 17.8892ms
+2026-04-11 13:47:37.469 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-11 13:47:37.482 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RestApi.Data.CreditDbContext' while attempting to activate 'RestApi.Controllers.WeatherForecastController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-11 13:47:37.642 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - 500 null text/plain; charset=utf-8 501.9804ms
+2026-04-11 13:50:13.092 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 13:50:13.510 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 13:50:13.517 +05:30 [INF] Hosting environment: Development
+2026-04-11 13:50:13.522 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 13:51:19.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - null null
+2026-04-11 13:51:19.915 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 13:51:20.001 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-11 13:51:20.071 +05:30 [INF] Route matched with {action = "GetBasicMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RestApi.Data.basic_member]]] GetBasicMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 13:51:20.659 +05:30 [INF] GetBasicMembers requested at "2026-04-11T13:51:20.6591920+05:30"
+2026-04-11 13:51:26.759 +05:30 [INF] Executed DbCommand (746ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[city], [b].[expr_dt], [b].[firstname], [b].[lastname], [b].[mail_code], [b].[member_code], [b].[member_no], [b].[middleinitial], [b].[phone_no], [b].[region_no], [b].[state_prov], [b].[street]
+FROM [basic_member] AS [b]
+2026-04-11 13:51:27.162 +05:30 [INF] Successfully retrieved 8498 basic members
+2026-04-11 13:51:27.217 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestApi.Data.basic_member, RestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-11 13:51:27.583 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi) in 7483.6833ms
+2026-04-11 13:51:27.599 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-11 13:51:27.684 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - 200 null application/json; charset=utf-8 7862.094ms
+2026-04-11 13:51:44.399 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-11 13:51:44.512 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-11 13:51:44.516 +05:30 [INF] Hosting environment: Development
+2026-04-11 13:51:44.521 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-11 13:52:29.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 13:52:29.721 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 473.4497ms
+2026-04-11 13:52:29.738 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 13:52:29.739 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 13:52:29.748 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 11.4043ms
+2026-04-11 13:52:29.817 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.1908ms
+2026-04-11 13:52:29.871 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 13:52:29.907 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.2733ms
+2026-04-11 13:52:34.290 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - null null
+2026-04-11 13:52:34.315 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-11 13:52:34.392 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-11 13:52:34.464 +05:30 [INF] Route matched with {action = "GetBasicMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RestApi.Data.basic_member]]] GetBasicMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-11 13:52:34.902 +05:30 [INF] GetBasicMembers requested at "2026-04-11T13:52:34.9020776+05:30"
+2026-04-11 13:52:38.921 +05:30 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[city], [b].[expr_dt], [b].[firstname], [b].[lastname], [b].[mail_code], [b].[member_code], [b].[member_no], [b].[middleinitial], [b].[phone_no], [b].[region_no], [b].[state_prov], [b].[street]
+FROM [basic_member] AS [b]
+2026-04-11 13:52:39.283 +05:30 [INF] Successfully retrieved 8498 basic members
+2026-04-11 13:52:39.331 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestApi.Data.basic_member, RestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-11 13:52:39.551 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi) in 5062.671ms
+2026-04-11 13:52:39.561 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-11 13:52:39.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - 200 null application/json; charset=utf-8 5312.0754ms
+2026-04-11 13:53:27.390 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-11 13:53:27.411 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 20.7009ms
+2026-04-11 13:55:21.413 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-11 13:55:21.420 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-11 13:55:21.952 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 538.5768ms
+2026-04-11 13:55:22.067 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 646.8766ms
+2026-04-11 13:55:22.699 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-11 13:55:22.743 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.699ms

@@ -1,0 +1,43 @@
+2026-04-08 15:12:51.631 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-08 15:12:52.070 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-08 15:12:52.097 +05:30 [INF] Hosting environment: Development
+2026-04-08 15:12:52.110 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-08 15:13:17.111 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index - null null
+2026-04-08 15:13:17.551 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-08 15:13:17.720 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index - 404 null null 628.568ms
+2026-04-08 15:13:17.741 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5235/swagger/index, Response status code: 404
+2026-04-08 15:13:32.603 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-08 15:13:32.798 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 196.3309ms
+2026-04-08 15:13:32.807 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-08 15:13:32.814 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-08 15:13:32.824 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 10.4408ms
+2026-04-08 15:13:33.066 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 259.2419ms
+2026-04-08 15:13:33.113 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-08 15:13:33.130 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.0067ms
+2026-04-08 15:13:42.602 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-04-08 15:13:42.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 18.0173ms
+2026-04-08 15:13:42.641 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui.css - null null
+2026-04-08 15:13:42.644 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-08 15:13:42.645 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-04-08 15:13:42.644 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-08 15:13:42.643 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui-bundle.js - null null
+2026-04-08 15:13:42.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 60.2302ms
+2026-04-08 15:13:42.710 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.5474ms
+2026-04-08 15:13:42.758 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-04-08 15:13:42.758 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-04-08 15:13:42.758 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-04-08 15:13:42.771 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui.css - 200 144929 text/css 129.7987ms
+2026-04-08 15:13:42.771 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 127.4256ms
+2026-04-08 15:13:42.773 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 129.4216ms
+2026-04-08 15:13:42.923 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-04-08 15:13:42.931 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.1769ms
+2026-04-08 15:13:42.975 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/favicon-32x32.png - null null
+2026-04-08 15:13:42.983 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-04-08 15:13:42.986 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/favicon-32x32.png - 200 628 image/png 10.3228ms
+2026-04-08 15:13:51.823 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/PersonsData - null null
+2026-04-08 15:13:51.845 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetAll (RestApi)'
+2026-04-08 15:13:51.930 +05:30 [INF] Route matched with {action = "GetAll", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-08 15:14:07.452 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestApi.Models.Person, RestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-08 15:14:07.480 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetAll (RestApi) in 15529.2885ms
+2026-04-08 15:14:07.488 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetAll (RestApi)'
+2026-04-08 15:14:07.496 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/PersonsData - 200 null application/json; charset=utf-8 15672.7595ms

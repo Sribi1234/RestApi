@@ -1,0 +1,27 @@
+{
+  "inputs": [],
+  "servers": {
+    "SQL-Server-Agent2": {
+      "type": "stdio",
+      "command": "dab",
+      "args": [
+        "start",
+        "--mcp-stdio",
+        "--config",
+        "C:\\Users\\sribi\\source\\repos\\RestApi\\dab-config.json"
+      ],
+      "env": {}
+    },
+    "SQL-Server-Agent": {
+      "type": "stdio",
+      "command": "dab",
+      "args": [
+        "start",
+        "--mcp-stdio",
+        "--config",
+        "C:\\Users\\sribi\\source\\repos\\RestApi\\dab-config.json"
+      ],
+      "env": {}
+    }
+  }
+}

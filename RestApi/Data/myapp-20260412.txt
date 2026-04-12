@@ -1,0 +1,18 @@
+2026-04-12 14:45:36.484 +05:30 [INF] Now listening on: http://localhost:5235
+2026-04-12 14:45:36.813 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 14:45:36.833 +05:30 [INF] Hosting environment: Development
+2026-04-12 14:45:36.838 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-04-12 14:48:20.371 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - null null
+2026-04-12 14:48:20.457 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-04-12 14:48:20.550 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-12 14:48:20.643 +05:30 [INF] Route matched with {action = "GetBasicMembers", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RestApi.Data.basic_member]]] GetBasicMembers() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-04-12 14:48:21.338 +05:30 [INF] GetBasicMembers requested at "2026-04-12T14:48:21.3378642+05:30"
+2026-04-12 14:48:25.828 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-12 14:48:28.842 +05:30 [INF] Executed DbCommand (592ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@p) [b].[city], [b].[expr_dt], [b].[firstname], [b].[lastname], [b].[mail_code], [b].[member_code], [b].[member_no], [b].[middleinitial], [b].[phone_no], [b].[region_no], [b].[state_prov], [b].[street]
+FROM [basic_member] AS [b]
+2026-04-12 14:48:29.046 +05:30 [INF] Successfully retrieved 5 basic members
+2026-04-12 14:48:29.124 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestApi.Data.basic_member, RestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-12 14:48:29.324 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi) in 8662.1838ms
+2026-04-12 14:48:29.336 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.GetBasicMembers (RestApi)'
+2026-04-12 14:48:29.411 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetBasicMembers - 200 null application/json; charset=utf-8 9059.949ms

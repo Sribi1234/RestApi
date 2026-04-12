@@ -1,0 +1,26 @@
+{
+  "continue-on-error": true,
+  "runtime": {
+    "rest": {
+      "enabled": true,
+      "path": "/api"
+    },
+    "graphql": {
+      "enabled": true,
+      "path": "/graphql"
+    },
+    "host": {
+      "mode": "development",
+      "cors": { "origins": [ "*" ] },
+      "authentication": { "provider": "StaticWebApps" }
+    }
+  },
+  "data-sources": {
+    "default": {
+      "database-type": "mssql",
+      "connection-string": "Data Source=SRIBINKK26\\SQLEXPRESS;Initial Catalog=UserManagementDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True",
+      "options": { "set-session-context": true }
+    }
+  }
+  
+}

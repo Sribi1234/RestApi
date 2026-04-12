@@ -1,0 +1,29 @@
+2026-03-31 11:19:45.326 +05:30 [INF] Now listening on: http://localhost:5235
+2026-03-31 11:19:45.585 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 11:19:45.589 +05:30 [INF] Hosting environment: Development
+2026-03-31 11:19:45.592 +05:30 [INF] Content root path: C:\Users\sribi\source\repos\RestApi\RestApi
+2026-03-31 11:23:33.013 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2026-03-31 11:23:33.541 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 11:23:33.541 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/_vs/browserLink - null null
+2026-03-31 11:23:33.544 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 551.003ms
+2026-03-31 11:23:33.562 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_framework/aspnetcore-browser-refresh.js - 200 14919 application/javascript; charset=utf-8 31.3888ms
+2026-03-31 11:23:33.626 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.637ms
+2026-03-31 11:23:33.646 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2026-03-31 11:23:33.656 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.41ms
+2026-03-31 11:23:38.566 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetWeatherForecast - null null
+2026-03-31 11:23:38.586 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-03-31 11:23:38.665 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.Get (RestApi)'
+2026-03-31 11:23:38.715 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[RestApi.WeatherForecast] Get() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-03-31 11:23:40.710 +05:30 [INF] Weather data requested at "2026-03-31T11:23:40.7101291+05:30"
+2026-03-31 11:23:40.734 +05:30 [INF] Executing ObjectResult, writing value of type 'RestApi.WeatherForecast[]'.
+2026-03-31 11:23:40.763 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.Get (RestApi) in 2034.9537ms
+2026-03-31 11:23:40.766 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.Get (RestApi)'
+2026-03-31 11:23:40.768 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetWeatherForecast - 200 null application/json; charset=utf-8 2201.6194ms
+2026-03-31 11:30:39.664 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetWeatherForecast - null null
+2026-03-31 11:30:39.671 +05:30 [INF] Executing endpoint 'RestApi.Controllers.WeatherForecastController.Get (RestApi)'
+2026-03-31 11:30:39.673 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[RestApi.WeatherForecast] Get() on controller RestApi.Controllers.WeatherForecastController (RestApi).
+2026-03-31 11:30:56.234 +05:30 [INF] Weather data requested at "2026-03-31T11:30:56.2342726+05:30"
+2026-03-31 11:30:56.240 +05:30 [INF] Executing ObjectResult, writing value of type 'RestApi.WeatherForecast[]'.
+2026-03-31 11:30:56.258 +05:30 [INF] Executed action RestApi.Controllers.WeatherForecastController.Get (RestApi) in 16582.0938ms
+2026-03-31 11:30:56.278 +05:30 [INF] Executed endpoint 'RestApi.Controllers.WeatherForecastController.Get (RestApi)'
+2026-03-31 11:30:56.293 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/WeatherForecast/GetWeatherForecast - 200 null application/json; charset=utf-8 16628.6876ms
